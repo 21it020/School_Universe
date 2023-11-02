@@ -1,0 +1,357 @@
+/* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html{
+  height:100%;
+}
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+.container {
+  min-height:100%;
+  position:relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9900; /* Change the color on hover */
+}
+
+.search-bar {
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Page-specific styles */
+h2 {
+  font-size: 24px;
+  
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  clear: both;
+  position:bottom;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  min-height: 100vh; /* Ensure the wrapper takes up at least the full viewport height */
+  position: relative;
+  margin-bottom: -60px; /* Adjust this value to match your footer's height */
+  padding-bottom: 60px; /* Adjust this value to match your footer's height */
+}
+
+
+/* About Us page styles */
+.about {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about li {
+  font-size: 20px;
+  line-height: 2.0;
+  padding-top: 5px;
+  padding-right: 70px;
+  padding-left: 70px;
+  color: #555;
+}
+.home {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.home h2 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home li {
+  font-size: 20px;
+  line-height: 2.0;
+  padding-top: 5px;
+  padding-right: 70px;
+  padding-left: 70px;
+  color: #555;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .container {
+    width: 100%; /* Full width for smaller screens */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+  .contact-details .adress{
+    flex-direction:row;
+  }
+  /* Add more responsive styles as needed */
+}
+.contact-details .adress{
+  flex-direction:row;
+}
+/* contact us */
+.contact {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding-left: 70px;
+}
+
+.address{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding-left: 120px;
+}
+.location{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* css variables */
+:root {
+  --primary-color: #000000;
+  --heading-color: #fff;
+  --btn-primary-bg: #379cf6;
+  --btn-secondary-bg: #ffffff;
+  --team-card-bg: #dcdcdc;
+  --link-color: #fff;
+  --link-active: #379cf6;
+  --card-bg: linear-gradient(
+    45deg,
+    rgb(255, 255, 255) 33%,
+    rgb(255, 255, 255) 52%,
+    rgb(182, 188, 193) 84%
+  );
+  --counter-color: linear-gradient(
+    90deg,
+    #ffffff 30%,
+    rgb(238, 241, 243) 55%,
+    rgb(233, 236, 240) 75%
+  );
+  --body-bg: rgb(145, 147, 151);
+  --newsletter-bg: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 20%,
+    rgb(255, 255, 255) 38%,
+    rgb(255, 255, 255) 100%
+  );
+  --testimonial-bg: #1a0f4f;
+  --font-name: "Poppins", sans-serif;
+  --small-text-color: rgba(255, 255, 255, 0.774);
+  --icon-bg:#151e4f;
+}
+
+.light-theme {
+  --body-bg: rgb(255, 255, 255);
+  --heading-color: #0c123d;
+  --btn-secondary-bg: #fcfbff;
+  --btn-primary-bg: #fff;
+  --primary-color: #ffffff;
+  --counter-color: #fff;
+  --counter-section-bg: #ffffff;
+  --link-color: #ffffff;
+  --link-active: #ffffff;
+  --newsletter-bg: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 29%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 78%
+  );
+  --small-text-color:#000;
+  --card-bg:#fff;
+  --testimonial-bg: #f7f7f7;
+  --team-card-bg: #fff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+
+section{
+  padding-left: 120px;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+}
+
+.container {
+  padding-left: 120px;
+  width: 1140px;
+  padding: 0px 15px;
+  margin: auto;
+
+}
+
+.description {
+  line-height: 30px;
+  font-size: .9rem;
+}
+
+.subtitle{
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+@mediaonly screen and (max-width: 1024px) {
+  .container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+section{
+    padding: 40px 0px;
+  }
+}
